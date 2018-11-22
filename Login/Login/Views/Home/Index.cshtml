@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+
+    @{
+        ViewData["Title"] = "View";
+    }
+
+
+
+    <div class="body__background"></div>
+  
+    <div class="login__background">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Log In to threeamigos</h3>
+                    <p>Don't Have an account?</p><a href="/Home/register"> signUp Here!</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <input class="input input__text half-top" placeholder="Email" data-bind="value:$data.email" />
+                </div>
+                <div class="col-xs-12 half-top">
+                    <input class="input input__text" placeholder="Password" data-bind="value:$data.password" />
+                </div>
+                <div class="col-xs-12 half-top">
+
+                    <button class="button button--blue button--large" data-bind="click:$data.save">Login</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 half-top">
+                    <a>Forgot Password?</a>
+                </div>
+            </div>
+
+
+        </div>
+            </div>
+    
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../../Scripts/knockout-3.4.2.js"></script>
+    <script src="../../ViewModels/LoginViewModel.js"></script>
+    
+</body>
+</html>

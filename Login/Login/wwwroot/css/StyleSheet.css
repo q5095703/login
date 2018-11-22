@@ -1,0 +1,74 @@
+﻿.body__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: aliceblue; }
+
+.login__background {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: 25%;
+  RIGHT: 25%; }
+
+.login__body {
+  height: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.half-top {
+  margin-top: 15px; }
+
+.half-bottom {
+  margin-bottom: 15px; }
+
+.input {
+  width: 100%; }
+  .input.input__text {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 5px; }
+  .input.input--red {
+    border: 1px solid red; }
+
+label {
+  color: #585858;
+  font-size: 12px;
+  float: left; }
+
+h3 {
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 700;
+  margin-top: 15px; }
+
+p, a {
+  font-size: 10px;
+  display: inline-block;
+  margin-bottom: 5px; }
+
+a {
+  margin-left: 5px; }
+
+.button {
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 10px;
+  line-height: 30px; }
+  .button.button--blue {
+    background-color: #66ccff; }
+  .button.button--large {
+    width: 100%; }

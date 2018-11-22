@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+
+    @{
+        ViewData["Title"] = "View";
+    }
+
+
+
+    <div class="body__background"></div>
+    <div class="login__background">
+        <div class="container-fluid">
+            
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3>Sign Up</h3>
+                            <p>Have an account?</p><a href="/Home/Index"> login Here!</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Name</label>
+                            <input class="input input__text" id="name" placeholder="Name" data-bind="value:$data.Name" />
+                        </div>
+                        <div class="col-xs-12 half-top">
+                            <label>Email</label>
+                            <input class="input input__text" id="email" placeholder="Email" data-bind="value:$data.Email" />
+                        </div>
+                        <div class="col-xs-12 half-top">
+                            <label>Phone Number</label>
+                            <input class="input input__text" placeholder="Phone Number" id="number" data-bind="value:$data.PhoneNumber" />
+                        </div>
+                        <div class="col-xs-6 half-top">
+                            <label>Password</label>
+                            <input class="input input__text " type="password" placeholder="Password" id="password" data-bind="value:$data.Password" />
+                        </div>
+                        <div class="col-xs-6 half-top">
+                            <label>Repeat Password</label>
+                            <input class="input input__text" type="password" placeholder="Retype Password" id="repeat" data-bind="value:$data.PasswordRepeat" />
+                        </div>
+                        <div class="col-xs-12 half-top half-bottom">
+
+                            <button class="button button--blue button--large" data-bind="click:$data.save">Register</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+           
+   
+    </div>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../../Scripts/knockout-3.4.2.js"></script>
+    <script src="../../ViewModels/RegisterViewModel.js"></script>
+
+</body>
+</html>
